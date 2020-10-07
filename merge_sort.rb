@@ -1,10 +1,8 @@
 def merge_sort(array)
 
     if array.length > 1
-        left_half = array[0...array.length/2]
-        right_half = array[array.length/2...array.length]
-        b = merge_sort(left_half)
-        c = merge_sort(right_half)
+        b = merge_sort(array[0...array.length/2])
+        c = merge_sort(array[array.length/2...array.length])
         i_array = 0
         i_b = 0
         i_c = 0
